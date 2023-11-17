@@ -33,7 +33,30 @@ namespace ControleDeChamado.Controllers
         }*/
 
         // GET: api/Funcionarios/resumo
-        [HttpGet("resumo")]
+
+        [HttpPost("resumo/login")]
+        public IActionResult LoginUsuario([FromBody] FuncionarioCreate loginRequest)
+        {
+            Funcionario usuario = _context.Funcionarios.FirstOrDefault(usuario => usuario.Usuario == loginRequest.Usuario &
+            usuario.Senha == loginRequest.Senha);
+
+            if (usuario != null)
+            {
+
+                Funcionario funcionario = _context.Funcionarios.FirstOrDefault(h => h.IdFuncionario == usuario.IdFuncionario);
+
+                return Ok(new { usuario, funcionario });
+            }
+            return NotFound("Usuario não localizado ou senha inválida!");
+        }
+        private bool UsuarioExists(int id)
+        {
+            return (_context.Funcionarios?.Any(e => e.IdFuncionario == id)).GetValueOrDefault();
+        }
+        
+
+
+    [HttpGet("resumo")]
         public async Task<ActionResult<IEnumerable<FuncionarioResumo>>> GetFuncionarioResumo()
         {
             if (_context.Funcionarios == null)

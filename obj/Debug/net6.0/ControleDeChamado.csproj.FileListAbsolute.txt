@@ -577,3 +577,8 @@ C:\Users\NOTBOOK\Desktop\ControleDeChamado\bin\Debug\net6.0\Supabase.dll
 C:\Users\NOTBOOK\Desktop\ControleDeChamado\bin\Debug\net6.0\Supabase.Storage.dll
 C:\Users\NOTBOOK\Desktop\ControleDeChamado\bin\Debug\net6.0\System.Reactive.dll
 C:\Users\NOTBOOK\Desktop\ControleDeChamado\bin\Debug\net6.0\Websocket.Client.dll
+C:\Users\NOTBOOK\Desktop\ControleDeChamado\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\NOTBOOK\Desktop\ControleDeChamado\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\NOTBOOK\Desktop\ControleDeChamado\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\NOTBOOK\Desktop\ControleDeChamado\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\NOTBOOK\Desktop\ControleDeChamado\obj\Debug\net6.0\ControleDeChamado.MvcApplicationPartsAssemblyInfo.cs
