@@ -45,7 +45,7 @@ namespace ControleDeChamado.Controllers
 
                 Funcionario funcionario = _context.Funcionarios.FirstOrDefault(h => h.IdFuncionario == usuario.IdFuncionario);
 
-                return Ok(new { usuario, funcionario });
+                return Ok(new { funcionario });
             }
             return NotFound("Usuario não localizado ou senha inválida!");
         }
